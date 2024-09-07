@@ -5,8 +5,8 @@
 Hello! I'm Sean, a (insert interesting/nice thing here)
 
 - 🔭 I’m currently working on: HostFixture (See below!) 
-- 🌱 I’m currently learning: Golang, OCPI, Docker
-- 💬 Ask me about: Infrastructure automation
+- 🌱 I’m currently learning: Golang, OCPI, Docker (Advanced use cases, networking, composition)
+- 💬 Ask me about: Infrastructure automation!
 - 🔮 I'd like to work on: Large scale, distributed systems, putting Redis to work in a meaningful way.
 - 📫 How to reach me: Paintcolt (at) gmail.com
 - ⚡ Fun fact: I have a bicycle habit, and I sometimes run around dressed up as an animal.
@@ -28,7 +28,7 @@ Hello! I'm Sean, a (insert interesting/nice thing here)
     - DNS (Specifically with BIND, experience with authoritative and recursive resolvers at ISP scale)
     - Routing (BGP, OSPF, IS-IS, etc. Mostly w/ Juniper & Extreme Networks)
     - REST API design & Implementation
-    - Asynchronous, message-based systems for loosely-coupled business systems
+    - Asynchronous, message-based systems for loosely-coupled business services
     - Distributed caching with Redis (Let's talk about session caching!) 
     - Sendgrid (Both outbound & inbound w/ callbacks)
     - OAuth Workflow (Extensive experience with Auth0/Okta) 
