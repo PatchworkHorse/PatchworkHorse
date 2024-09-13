@@ -2,7 +2,7 @@
 
 ## About Me
 
-Hello! I'm Sean, a (insert interesting/nice thing here)
+Hello! I'm Sean / Patchwork
 
 - 🔭 I’m currently working on: HostFixture (See below!) 
 - 🌱 I’m currently learning: Golang, OCPI, Docker (Advanced use cases, networking, composition)
@@ -13,12 +13,12 @@ Hello! I'm Sean, a (insert interesting/nice thing here)
 
 ## My Skills
 
-- **Programming Languages & Frameworks:** 
+- **Languages & Frameworks:** 
     - C# / .NET 
     - TypeScript / Angular
-    - PowerShell (Core)
     - Bicep
     - Golang (Work in progress)
+    - PowerShell (Core)
     - WPF / MAUI
 - **Platforms, Skills, Misc Knowledge**
     - Microsoft Azure - Everything from simple web apps to virtual networking with physical peering via ExpressRoute
@@ -26,12 +26,16 @@ Hello! I'm Sean, a (insert interesting/nice thing here)
     - DevOps (Mostly Azure) - Policy, building, testing, staging, deployment
     - Linux / Unix (Ubuntu is OS of choice, most derivatives of Debian will do)
     - DNS (Specifically with BIND, experience with authoritative and recursive resolvers at ISP scale)
-    - Routing (BGP, OSPF, IS-IS, etc. Mostly w/ Juniper & Extreme Networks)
     - REST API design & Implementation
     - Asynchronous, message-based systems for loosely-coupled business services
     - Distributed caching with Redis (Let's talk about session caching!) 
     - Sendgrid (Both outbound & inbound w/ callbacks)
-    - OAuth Workflow (Extensive experience with Auth0/Okta) 
+    - Salesforce REST API (Created a really cool .NET client for SF REST professionally)
+    - OAuth Workflow (Extensive experience with Auth0/Okta)
+    - Routing (BGP, OSPF, IS-IS, etc. Mostly w/ Juniper & Extreme Networks)
+    - Passive and active optical networking
+    - Datacenter power(AC and DC), cooling, operations
+
 
 
 ## Projects
