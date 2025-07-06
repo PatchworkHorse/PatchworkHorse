@@ -5,7 +5,7 @@
 Hello! I'm Sean / Patchwork
 
 - 🔭 I’m currently working on: HostFixture (See below!) 
-- 🌱 I’m currently learning: Golang, OCPI, Docker (Advanced use cases, networking, composition)
+- 🌱 I’m currently learning: Golang, OCPI, Kubernetes (Advanced use cases, networking, composition)
 - 💬 Ask me about: Infrastructure automation!
 - 🔮 I'd like to work on: Large scale, distributed systems, putting Redis to work in a meaningful way.
 - 📫 How to reach me: Paintcolt (at) gmail.com
@@ -25,6 +25,7 @@ Hello! I'm Sean / Patchwork
     - Infrastructure automation (Mostly w/ Bicep & PowerShell Core)
     - DevOps (Mostly Azure) - Policy, building, testing, staging, deployment
     - Linux / Unix (Ubuntu is OS of choice, most derivatives of Debian will do)
+    - MCP (Model Context Protocol) - Client & Server Implementations, mostly in .NET 
     - DNS (Specifically with BIND, experience with authoritative and recursive resolvers at ISP scale)
     - REST API design & Implementation
     - Asynchronous, message-based systems for loosely-coupled business services
