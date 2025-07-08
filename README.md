@@ -19,6 +19,7 @@ Hello! I'm Sean / Patchwork
     - Bicep
     - Golang (Work in progress)
     - PowerShell (Core)
+    - Angular
     - WPF / MAUI
 - **Platforms, Skills, Misc Knowledge**
     - Microsoft Azure - Everything from simple web apps to virtual networking with physical peering via ExpressRoute
@@ -61,6 +62,7 @@ Learning project as part of learning Golang & gRPC as well as sharpening contain
 
 ## Connect with Me
 
+- [Web](https://patchwork.horse)
 - [LinkedIn](https://www.linkedin.com/in/sean-hogan-nh/)
 - [Bluesky](https://bsky.app/profile/patchwork.horse)
 - [Telegram](https://t.me/Patchwork)
