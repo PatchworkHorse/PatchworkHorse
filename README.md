@@ -55,7 +55,7 @@ HostFixture is a test fixturing framework intended to bring integration tests cl
 ### Internet Emulator
 https://github.com/PatchworkHorse/InternetEmulator
 
-A Docker-based implementation of a multi-AS network topology for learning and experimenting. Support for inter-AS (BGP) routing, as well as intra-AS (OSPF) routing. Each router is implemented as a Docker container running FRR. 
+A Docker-based implementation of a multi-AS network topology for learning and experimenting. Support for inter-AS (BGP) routing, as well as intra-AS (OSPF) routing. Each router is implemented as a Docker container running FRR. Aside cool networking stuff, there's also some novel Docker use such as partitioning compose files, semi-dynamically generation of configuration files, etc.
 
 **Features:**
 - Multi-AS network topology with three simulated ISPs (🐴 Horse, 🦆 Duck, 🐏 Ram)
