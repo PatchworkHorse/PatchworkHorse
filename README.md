@@ -51,6 +51,26 @@ HostFixture is a test fixturing framework intended to bring integration tests cl
 - Add programmable HTTP interceptors to log, alter, or mock HttpRequest and HttpResponse messages. 
 - Intercept, alter, mock integrations with various Microsoft Azure services. 
 
+
+### Internet Emulator
+https://github.com/PatchworkHorse/InternetEmulator
+
+A Docker-based implementation of a multi-AS network topology for learning and experimenting. Support for inter-AS (BGP) routing, as well as intra-AS (OSPF) routing. Each router is implemented as a Docker container running FRR. 
+
+**Features:**
+- Multi-AS network topology with three simulated ISPs (🐴 Horse, 🦆 Duck, 🐏 Ram)
+- BGP peering relationships between autonomous systems
+- OSPF for intra-AS routing
+- Simulated customer networks connected to each ISP
+- FRR-based routing with Docker containers
+- Interactive CLI access to verify BGP peering and connectivity
+
+** Planned Features:**
+- More complex topologies
+- Route reflection 
+- IP anycast - Looking to emulate Netflix Open Connect
+
+
 ### DistributedTranscoder
 https://github.com/PatchworkHorse/DistributedTranscoder
 
