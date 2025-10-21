@@ -58,17 +58,18 @@ https://github.com/PatchworkHorse/InternetEmulator
 A Docker-based implementation of a multi-AS network topology for learning and experimenting. Support for inter-AS (BGP) routing, as well as intra-AS (OSPF) routing. Each router is implemented as a Docker container running FRR. Aside cool networking stuff, there's also some novel Docker use such as partitioning compose files, semi-dynamically generation of configuration files, etc.
 
 **Features:**
-- Multi-AS network topology with three simulated ISPs (🐴 Horse, 🦆 Duck, 🐏 Ram)
+- Multi-AS network topology with simulated ISPs, CDNs, etc. 
 - BGP peering relationships between autonomous systems
-- OSPF for intra-AS routing
+- OSPF and iBGP for routing within autonomous systems
 - Simulated customer networks connected to each ISP
+- Simulated Internet Exchange with bilateral and transit peering
 - FRR-based routing with Docker containers
 - Interactive CLI access to verify BGP peering and connectivity
 
 ** Planned Features:**
-- More complex topologies
+- DNS with custom TLDs (Think root servers)
 - Route reflection 
-- IP anycast - Looking to emulate Netflix Open Connect
+- Emulate Netflix Open Connect (IP Anycast, simulate OCAs within an AS)
 
 
 ### DistributedTranscoder
