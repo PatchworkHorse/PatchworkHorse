@@ -4,8 +4,7 @@
 
 Hello! I'm Sean / Patchwork
 
-- 🔭 I’m currently working on: HostFixture (See below!) 
-- 🌱 I’m currently learning: Golang, OCPI, Kubernetes (Advanced use cases, networking, composition)
+- 🔭 I’m currently working on: HostFixture & Internet Emulator (See below!) 
 - 💬 Ask me about: Infrastructure automation!
 - 🔮 I'd like to work on: Large scale, distributed systems, putting Redis to work in a meaningful way.
 - 📫 How to reach me: Paintcolt (at) gmail.com
@@ -17,7 +16,7 @@ Hello! I'm Sean / Patchwork
     - C# / .NET 
     - TypeScript / Angular
     - Bicep
-    - Golang (Work in progress)
+    - Golang
     - PowerShell (Core)
     - Angular
     - WPF / MAUI
