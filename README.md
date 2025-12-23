@@ -16,7 +16,7 @@ Hello! I'm Sean / Patchwork
     - C# / .NET 
     - TypeScript / Angular
     - Bicep
-    - Golang
+    - Go
     - PowerShell (Core)
     - Angular
     - WPF / MAUI
