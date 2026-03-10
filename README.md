@@ -82,7 +82,6 @@ Learning project as part of learning Golang & gRPC as well as sharpening contain
 
 ## Connect with Me
 
-- [Web](https://patchwork.horse)
 - [LinkedIn](https://www.linkedin.com/in/sean-hogan-nh/)
 - [Telegram](https://t.me/Patchwork)
 
