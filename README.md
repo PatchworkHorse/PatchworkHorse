@@ -2,8 +2,7 @@
 
 ## About Me
 
-Hello! I'm Sean / Patchwork
-
+L
 - 🔭 I’m currently working on: HostFixture & Internet Emulator (See below!) 
 - 💬 Ask me about: Infrastructure automation!
 - 🔮 I'd like to work on: Large scale, distributed systems, putting Redis to work in a meaningful way.
