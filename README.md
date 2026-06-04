@@ -2,40 +2,32 @@
 
 ## About Me
 
-- 🔭 I’m currently working on: HostFixture & Internet Emulator (See below!) 
-- 💬 Ask me about: Infrastructure automation!
-- 🔮 I'd like to work on: Large scale, distributed systems, putting Redis to work in a meaningful way.
+- 🔭 I’m currently working on: **TransitLab** (a containerized multi-AS network emulation framework) & **HostFixture** (an open-source .NET integration testing library).
+- 💬 Ask me about: Infrastructure automation, BGP Anycast, and dynamic traffic steering!
+- 🔮 I'd like to work on: Global edge infrastructure, network control planes, distributed systems, and learning more about eBPF/Rust.
 - 📫 How to reach me: Paintcolt (at) gmail.com
 - ⚡ Fun fact: I have a bicycle habit, and I sometimes run around dressed up as an animal.
 
 ## My Skills
 
-- **Languages & Frameworks:** 
-    - C# / .NET 
-    - TypeScript / Angular
-    - Bicep
-    - Go
-    - PowerShell (Core)
-    - Angular
-    - WPF / MAUI
-- **Platforms, Skills, Misc Knowledge**
-    - Microsoft Azure - Everything from simple web apps to virtual networking with physical peering via ExpressRoute
-    - Infrastructure automation (Mostly w/ Bicep & PowerShell Core)
-    - DevOps (Mostly Azure) - Policy, building, testing, staging, deployment
-    - Linux / Unix (Ubuntu is OS of choice, most derivatives of Debian will do)
-    - MCP (Model Context Protocol) - Client & Server Implementations, mostly in .NET 
-    - DNS (Specifically with BIND, experience with authoritative and recursive resolvers at ISP scale)
-    - REST API design & Implementation
-    - Asynchronous, message-based systems for loosely-coupled business services
-    - Distributed caching with Redis (Let's talk about session caching!) 
-    - Sendgrid (Both outbound & inbound w/ callbacks)
-    - Salesforce REST API (Created a really cool .NET client for SF REST professionally)
-    - OAuth Workflow (Extensive experience with Auth0/Okta)
-    - Routing (BGP, OSPF, IS-IS, etc. Mostly w/ Juniper & Extreme Networks)
-    - Passive and active optical networking
-    - Datacenter power(AC and DC), cooling, operations
+**Core Languages & Tooling**
+- Go
+- C# / .NET Core
+- Rust (Currently Learning / eBPF focus)
+- Bash / PowerShell (Core)
+- Infrastructure as Code (Bicep)
 
+**Networking & Infrastructure**
+- **Routing & Edge:** BGP, OSPF, IS-IS, Anycast (Experience spanning software emulators to Extreme Networks / Juniper hardware).
+- **Linux Operations:** Ubuntu/Debian high-availability environments, HAProxy, layer 7 load balancing.
+- **DNS Architecture:** BIND, with hands-on experience running authoritative and recursive resolvers at ISP scale.
+- **Physical Layer:** Datacenter operations, passive/active optical networking (CWDM), ExpressRoute physical peering. 
 
+**Systems Architecture**
+- **Distributed Systems:** Asynchronous, message-based architectures and distributed caching / horizontal scaling with Redis.
+- **Cloud & DevOps:** Microsoft Azure (from containerized build agents to strict Zero-Trust virtual networking).
+- **Security & Identity:** Enterprise OAuth 2.0 / SSO workflows (Auth0, Okta), JWT, Managed Identities.
+- **Emerging Tech:** Model Context Protocol (MCP) client & server implementations for secure AI integration.
 
 ## Projects
 
@@ -50,7 +42,7 @@ HostFixture is a test fixturing framework intended to bring integration tests cl
 
 
 ### Internet Emulator
-https://github.com/PatchworkHorse/InternetEmulator
+https://github.com/PatchworkHorse/TransitLab
 
 A Docker-based implementation of a multi-AS network topology for learning and experimenting. Support for inter-AS (BGP) routing, as well as intra-AS (OSPF) routing. Each router is implemented as a Docker container running FRR. Aside cool networking stuff, there's also some novel Docker use such as partitioning compose files, semi-dynamically generation of configuration files, etc.
 
