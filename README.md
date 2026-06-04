@@ -1,11 +1,9 @@
-
-
 ## About Me
 
 - 🔭 I’m currently working on: **TransitLab** (a containerized multi-AS network emulation framework) & **HostFixture** (an open-source .NET integration testing library).
 - 💬 Ask me about: Infrastructure automation, BGP Anycast, and dynamic traffic steering!
 - 🔮 I'd like to work on: Global edge infrastructure, network control planes, distributed systems, and learning more about eBPF/Rust.
-- 📫 How to reach me: Paintcolt (at) gmail.com
+- 📫 How to reach me: hello.sean.hogan (at) gmail.com
 - ⚡ Fun fact: I have a bicycle habit, and I sometimes run around dressed up as an animal.
 
 ## My Skills
@@ -31,47 +29,58 @@
 
 ## Projects
 
-### HostFixture
-https://github.com/PatchworkHorse/HostFixture
-
-HostFixture is a test fixturing framework intended to bring integration tests closer to the "Real" thing. HostFixture is designed to work with any IHostBuilder implementation and, among other things allows you to: 
-- Manipulate IConfiguration values
-- Replace ServiceCollection registrations (i.e., with mocks)
-- Add programmable HTTP interceptors to log, alter, or mock HttpRequest and HttpResponse messages. 
-- Intercept, alter, mock integrations with various Microsoft Azure services. 
-
-
-### Internet Emulator
+### 🌐 TransitLab
 https://github.com/PatchworkHorse/TransitLab
 
-A Docker-based implementation of a multi-AS network topology for learning and experimenting. Support for inter-AS (BGP) routing, as well as intra-AS (OSPF) routing. Each router is implemented as a Docker container running FRR. Aside cool networking stuff, there's also some novel Docker use such as partitioning compose files, semi-dynamically generation of configuration files, etc.
+A high-fidelity, programmatic inter-domain routing emulation framework that orchestrates multi-AS internet topologies using **FRRouting (FRR)**, **Go**, and deterministic Linux container networking.
 
-**Features:**
-- Multi-AS network topology with simulated ISPs, CDNs, etc. 
-- BGP peering relationships between autonomous systems
-- OSPF and iBGP for routing within autonomous systems
-- Simulated customer networks connected to each ISP
-- Simulated Internet Exchange with bilateral and transit peering
-- FRR-based routing with Docker containers
-- Interactive CLI access to verify BGP peering and connectivity
+TransitLab allows engineers to simulate, test, and automate service-provider-level traffic engineering, BGP/OSPF convergence, and edge architectures—running real routing software without the overhead of heavy, specialized network simulators.
 
-** Planned Features:**
-- DNS with custom TLDs (Think root servers)
-- Route reflection 
-- Emulate Netflix Open Connect (IP Anycast, simulate OCAs within an AS)
+> 🛠️ **Control Plane Tooling:** Includes a custom orchestration CLI written in **Go** to dynamically spin up, isolate, and manage discrete topology namespaces via Docker Compose profiles.
 
+#### ✨ System Highlights
+* **Programmatic Topologies:** Topology configurations are modularized by Autonomous System (AS) fragments, leveraging shared router templates to enable rapid, composable network expansion.
+* **Deterministic Interface Binding:** Bypasses unpredictable Docker network provisioning by utilizing `macvlan`/`ipvlan` driver architectures and explicit interface assignments to maintain rigid, consistent link naming across executions.
+* **Production-Grade Routing Stack:** Routers utilize a hardened Ubuntu + FRR base image executing native routing daemons (BGP, iBGP, OSPF, IS-IS) with kernel-level IPv4 forwarding enabled.
+* **Local or Cloud-Native Execution:** Fully optimized to launch in a single click via GitHub Codespaces or locally on any Linux host with Docker Compose V2.
 
-### DistributedTranscoder
-https://github.com/PatchworkHorse/DistributedTranscoder
+#### 🏗️ Architecture & Core Components
+The repository organizes compose bundles, router bootstrap sequences, and routing engine configurations by topology under `topologies/<name>/`:
 
-Learning project as part of learning Golang & gRPC as well as sharpening containerization skills. DistributedTranscoder is intended to perform transcoding operations on video in a distributed, platform-agnostic manner using cheap cloud resources. 
+---
 
-- Accept incoming video (blobs for now, streams later) and break it into configurable chunks, drop chunks into an S3 bucket. 
-- Orchestrate operations on containerized workers. Currently workers use FFmpeg for transcoding and other manipulation tasks
-- Re-assemble transcoded chunks into useful output
+### 🧪 HostFixture
+https://github.com/PatchworkHorse/HostFixture
 
-## Connect with Me
+HostFixture is a fluent, highly extensible integration testing framework for .NET designed to intercept, mutate, and isolate `IHost` and `IHostApplicationBuilder` service collections, configuration pipelines, and HTTP dependencies at runtime.
 
-- [LinkedIn](https://www.linkedin.com/in/sean-hogan-nh/)
-- [Telegram](https://t.me/Patchwork)
+By providing an intuitive, chainable abstraction layer over native .NET dependency injection (`IServiceCollection`), HostFixture allows developers to orchestrate deterministic, side-effect-free integration tests without relying on complex, boilerplate-heavy testing sub-structures.
 
+#### 🛠️ Framework Features
+* **Fluent Service Mutations:** Seamlessly replace, stub, or register services (`Singleton`, `Scoped`, `Transient`) via an expressive API directly against the host builder infrastructure.
+* **Deterministic HTTP Interception:** Intercept, filter, and mock outbound traffic from injected `HttpClient` instances with advanced URI and method-level request/response routing.
+* **Runtime Configuration Injections:** Overwrite individual configuration elements, merge dedicated JSON blocks, or patch entire test-specific settings files into active application providers on the fly.
+* **Architecture-Agnostic Core:** Natively integrates with any component relying on .NET Generic Host—including ASP.NET Core Minimal APIs, Web APIs, Worker Services, and background daemons.
+
+#### 🚀 Architectural Setup
+To leverage HostFixture, decouple your initialization sequence from the standard `Main` execution path by exposing your `WebApplicationBuilder` setup logic. This allows the integration testing layer to hook into the service collection before the pipeline is compiled.
+
+##### Application Boundary (`Program.cs`)
+```csharp
+public class Program
+{
+    public static WebApplicationBuilder CreateBuilder(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
+        // Domain services configuration...
+        return builder;
+    }
+
+    public static void Main(string[] args)
+    {
+        var builder = CreateBuilder(args);
+        var app = builder.Build();
+        // Routing and pipeline middleware...
+        app.Run();
+    }
+}
