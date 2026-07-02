@@ -1,6 +1,6 @@
 ## About Me
 
-- 🔭 I’m currently working on: **TransitLab** (a containerized multi-AS network emulation framework) & **HostFixture** (an open-source .NET integration testing library).
+- 🔭 I’m currently: Working through the CCNP-SP course and building **TransitLab** (a containerized multi-AS network emulation framework) & **HostFixture** (an open-source .NET integration testing library).
 - 💬 Ask me about: Infrastructure automation, BGP Anycast, and dynamic traffic steering!
 - 🔮 I'd like to work on: Global edge infrastructure, network control planes, distributed systems, and learning more about eBPF/Rust.
 - 📫 How to reach me: hello.sean.hogan (at) gmail.com
@@ -11,7 +11,7 @@
 **Core Languages & Tooling**
 - Go
 - C# / .NET Core
-- Rust (Currently Learning / eBPF focus)
+- Rust (Currently Learning the language: Experimenting with eBPF and XDP)
 - Bash / PowerShell (Core)
 - Infrastructure as Code (Bicep)
 
