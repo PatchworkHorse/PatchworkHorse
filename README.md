@@ -11,7 +11,7 @@
 **Core Languages & Tooling**
 - Go
 - C# / .NET Core
-- Rust (Currently Learning the language: Experimenting with eBPF and XDP)
+- Rust (eBPF/XDP)
 - Bash / PowerShell (Core)
 - Infrastructure as Code (Bicep)
 
